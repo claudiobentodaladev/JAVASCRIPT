@@ -11,7 +11,6 @@ typeof anything
 // typeof: is used to get what datatype you are useing
 
 
-
 // let/var: you may you this two
 // any_data/anything: is identificator
 // =: is atribuition signal
