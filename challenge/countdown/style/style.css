@@ -1,0 +1,22 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contador {
+    font-size: 30px;
+}
+
+#tempo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+span {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin: 0 5px;
+}
