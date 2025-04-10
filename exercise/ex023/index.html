@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENTS</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div#area{
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        font-size: 1.5em;
+        text-align: center;
+        border-radius: 10px;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="inside()" onmouseout="outside()">click on me...</div>
+
+    <script>
+        function clicar(){
+            var a = window.document.querySelector('div#area')
+            a.innerText = 'you clicked!'
+            a.style.height = '200px'
+            a.style.width = '200px'
+            a.style.transition = '.2s'
+        }
+        function inside(){
+            var inside = window.document.querySelector('div#area')
+            inside.style.width = '300px'
+            inside.style.height = '300px'
+            inside.style.transition = '.3s'
+            inside.innerText = 'almoust there, click!'
+        }
+        function outside(){
+            var out = window.document.querySelector('div#area')
+            out.style.width = '400px'
+            out.style.height = '400px'
+            out.style.transition = '.3s'
+            out.innerText = 'Came on!, click!'
+        }
+    </script>
+</body>
+</html>

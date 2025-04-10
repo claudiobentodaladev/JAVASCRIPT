@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMING NUMBERS</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main{
+        margin: auto;
+        width: 470px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: yellow;
+    }
+    h1{
+        text-align: center;
+    }
+    h1,p{
+        text-transform: uppercase;
+    }
+    input{
+        font-size: 1em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+</style>
+<body>
+    <main>
+        <h1>saming values</h1>
+        <input type="number" name="number1" id="number1">
+        <input type="number" name="number2" id="number2">
+        <input type="button" value="Sam"  onclick="sam()">
+        <p id="sam">0</p>
+    </main>
+
+<script>
+    function sam(){
+        var num1 = window.document.querySelector('input#number1')
+        var num2 = window.document.querySelector('input#number2')
+        var resulted = window.document.querySelector('p#sam')
+        var number1 = Number(num1.value)
+        var number2 = Number(num2.value)
+        var s = number1 + number2
+        resulted.innerHTML = s
+    }
+</script>
+</body>
+</html>
