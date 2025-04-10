@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM (Document Object Model) / BY TAG NAME</title>
+    <title>DOM (Document Object Model) /  By ID</title>
 </head>
 <style>
     body{
@@ -18,12 +18,12 @@
 <body>
     <p>here's the resulted</p>
     <p>learning to use <strong>DOM</strong> on javascript.</p>
-    <div>click on me</div>
+    <div class="msg">click on me</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0]//This is to get by tag name
-        window.document.write('First p text: ',p1.innerText)//This is to show element got
-        p1.style.backgroundColor = 'darkgray'//This is to put any style, in element that you got by tag name
+        var message = window.document.getElementsByClassName('msg')[0]//This is to get element by class name
+        message.style.color = 'red'//This is to put any style, in element that you got by class name
+        message.innerHTML = 'hello, world!'//This is to put any text in element got
     </script>
 </body>
 </html>
