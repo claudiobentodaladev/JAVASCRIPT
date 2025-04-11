@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: monospace;
+}
+header > h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+main{
+    margin: auto;
+    border-radius: 30px;
+    padding: 15px;
+    width: 40%;
+    height: 350px;
+    box-shadow: 4px 4px 12px 4px #00000083;
+    background-color: white;
+}
+main > p{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 7.5em;
+}
+main > div{
+    width: 50%;
+    background-color: wheat;
+    height: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+main > a{
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
