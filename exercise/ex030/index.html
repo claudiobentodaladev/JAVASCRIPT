@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHOOL | CONDITION</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    main{
+        margin: auto;
+        height: 300px;
+        width: 500px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: yellow;
+    }
+    div{
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+    input{
+        font-size: 20px;
+    }
+    h1,p{
+        text-transform: capitalize;
+        text-align: center;
+    }
+    </style>
+<body>
+    <main>
+        <h1>school system</h1>
+        <div>
+            <input type="number" name="medium1" id="imedium1" placeholder="Input your medium" max="20" min="0">
+            <input type="number" name="medium2" id="imedium2" placeholder="Input your medium" max="20" min="0">
+            <input type="number" name="medium3" id="imedium3" placeholder="Input your medium" max="20" min="0">
+            <input type="button" value="Click" id="click" onclick="media()">
+        </div>
+        <p id="resulted">wait, input you medium</p>
+    </main>
+<script>
+    function media(){
+        var medium1 = window.document.querySelector('input#imedium1')
+        var medium2 = window.document.querySelector('input#imedium2')
+        var medium3 = window.document.querySelector('input#imedium3')
+        var resulted = window.document.querySelector('p#resulted')
+        var medium1 = Number(medium1.value)
+        var medium2 = Number(medium2.value)
+        var medium3 = Number(medium3.value)
+        var medium = ( medium1 + medium2 + medium3 ) / 3
+        if(medium >= 10){
+            resulted.innerText = `You are GOOD by ${medium} !`
+        }else{
+            resulted.innerText = `You are BAD by ${medium} !`
+        }
+        
+
+    }
+</script>
+</body>
+</html>
