@@ -14,12 +14,12 @@
         <input type="number" name="barth" id="ibarth" placeholder="your barth year">
         <article>
             <label for="f" >femule</label>
-            <input type="radio" name="s" id="f" value="man">
+            <input type="radio" name="sex" id="f" value="man">
             <label for="m">macule</label>
-            <input type="radio" name="s" id="m" value="woman">
+            <input type="radio" name="sex" id="m" value="woman">
         </article>
-        <input type="button"  id="check" value="check" onclick="check()">
-        <p id="show">wait, input first</p>
+        <input type="button"  id="check" value="check" onclick="check()" onmousedown="inside()">
+        <p id="show">wait, fill data box first</p>
     </main>
 
     <script src="script/years_olds-checker.js"></script>

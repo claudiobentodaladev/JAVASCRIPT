@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: yellow;
+    font-family: monospace;
 }
 header > h1,p{
     text-align: center;
@@ -41,4 +42,8 @@ main > input#check{
 main > p{
     text-align: center;
     font-size: 20px;
+}
+input#check{
+    width: 100px;
+    height: 40px;
 }

@@ -1,11 +1,26 @@
+function inside(){
+    var buttom = window.document.querySelector('input#check')
+    buttom.style.width = '70px'
+    buttom.style.height = '30px'
+    buttom.style.transition = '.2s'
+}
 function check(){
     var time = new Date()
-    var barth = window.document.querySelector('input#ibarth')//Não esta a ficar number
-    var years = Number(barth)
-    var years_olds = time.getFullYear() - years
-    //Pegar valor do radio
-    var sex = window.document.querySelector('input#f').value
+    var year = time.getFullYear()
+    var barth = window.document.querySelector('input#ibarth').value
     var show = window.document.querySelector('p#show')
-    //if..else do sexo
-    show.innerText = `${sex} ${years_olds} years old`
+
+    if(barth > year || barth <= 0){
+        window.alert('ERROR, TRY AGAIN!')
+    } else{
+        var sex = window.document.getElementsByName('sex')
+        var years_old = year - Number(barth)
+        if(sex[1].checked){
+            var genero = 'man'
+        } else{
+            var genero = 'woman'
+        }
+        show.innerText = `${genero} ${years_old} years old`
+    }
 }
+//DEPOIS FAZER MOUSEIN E MOUSEOUT NO BOTÃO
