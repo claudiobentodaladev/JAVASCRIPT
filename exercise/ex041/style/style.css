@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    font-family: monospace;
+}
+header > h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+}
+main{
+    margin: auto;
+    padding: 30px;
+    width: 45vw;
+    height: 60vh;
+    border-radius: 15px;
+    background-color: yellow;
+}
+main > section{
+    margin: auto;
+}
+main > section > div{
+    color: black;
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+main > section > div > input{
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 2px 4px 5px 1px #0000009c;
+    border: transparent;
+    border-radius: 5px;
+}
+ footer > p{
+    color: yellow;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 18px;
+}
