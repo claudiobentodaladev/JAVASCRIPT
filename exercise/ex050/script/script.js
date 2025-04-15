@@ -1,10 +1,14 @@
-var number = window.document.querySelector('input#inum')
+var number = window.document.querySelector('input#inum').value
 var inputs = window.document.querySelector('p#inputs')
-var length = window.document.querySelector('p#resulted')
-var valores = []
+var resulted = window.document.querySelector('p#resulted')
+var values = [1,2,3]
+
 function add(){
-    inputs = ''
-    inputs.innerHTML += Number(number.value)
+    if(number in values) {
+        window.alert('ok')
+    } else {
+        window.alert('wrong')
+    }
 }
 function show(){
     
