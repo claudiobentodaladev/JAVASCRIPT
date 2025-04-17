@@ -5,4 +5,4 @@ medium >= 10 ? 'Apto' : 'Reprovado'
 
 var x = 5
 x += x  > 10?5:1
-x
+console.log(x)
