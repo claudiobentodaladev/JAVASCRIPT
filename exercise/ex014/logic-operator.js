@@ -5,11 +5,11 @@ var b = 8
 var and
 and = true && false
 and = false && false
-and
+console.log(and)
 
 // or: is true if at least one input is true.
 var or
 or = false || false
 or
 or = true || false
-or
+console.log(or)
