@@ -3,10 +3,10 @@ var n = 3
 n = n + 2
 n = n / 2
 n = n**2
-n
+console.log(n)
 //  or
 n=3
 n+=2
 n/=2
 n**=2
-n
+console.log(n)
