@@ -2,20 +2,20 @@ var result
 
 // relational operator
 result = 5 == 5
-result
+console.log(result)
 
 result = 5 == '5'
-result
+console.log(result)
 
 // now with identificator operator
 result = 5 === '5'
-result
+console.log(result)
 
 result = 5 === 5
 
 // Desigual restrito(portuguese word)
 result = 5 != '5' // it's used to see if is same value.
-result
+console.log(result)
 
 result = 5 !== '5' // it's used to see if is same value and same datatype.
-result
+console.log(result)
