@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time control</title>
+</head>
+<style>
+    body{
+        font-family: monospace;
+        background-color: black;
+    }
+    main{
+        align-items: center;
+        text-align: center;
+    }
+    main > h1{
+        text-transform: uppercase;
+        color: yellow;
+    }
+    main > div#time{
+        font-size: 5em;
+        margin-bottom: 15px;
+        color: yellow;
+    }
+    main > p{
+        display: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        color: yellow;
+    }
+    main > section{
+        display: inline;
+    }
+    main > section > input{
+        font-size: 1em;
+        font-weight: bold;
+        padding: 20px 10px;
+        text-transform: capitalize;
+        border-radius: 15px;
+        border: transparent;
+        margin-right: 5px;
+        transition: .3s;
+    }
+    main > section > input:hover{
+        transform: translate(5px);
+        transition: .3s;
+    }
+    main > section > input#start{
+        background-color: green;
+    }
+    main > section > input#stop{
+        background-color: red;
+    }
+</style>
+<body>
+    <main>
+        <h1>time control</h1>
+        <div id="time">0</div>
+        <p></p>
+        <section>
+            <input type="button" value="start count" id="start" onclick="start()">
+            <input type="button" value="stop count" id="stop" onclick="stop()">
+        </section>
+    </main>
+    <script src="set_interval.js"></script>
+</body>
+</html>
