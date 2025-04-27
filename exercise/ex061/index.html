@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO TO OTHER PAGE</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: monospace;
+    }
+    main{
+        width: 700px;
+        height: 350px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: yellow;
+    }
+    main > .normal{
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    main > input.send{
+        color: yellow;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: black;
+    }
+    main > p{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+</style>
+<body>
+    <main>
+        <input type="text" name="name" placeholder="name here" id="iname" class="normal">
+        <select name="language" id="ilang" class="normal">
+            <option value="pt">portuguese</option>
+            <option value="en">english</option>
+            <option value="sp">spanish</option>
+            <option value="fr">franch</option>
+        </select>
+        <input type="button" value="GO" onclick="go()" class="send">
+        <p id="show">waiting...</p>
+    </main>
+
+    <script src="go.js"></script>
+</body>
+</html>
