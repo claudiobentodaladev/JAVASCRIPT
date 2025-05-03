@@ -1,27 +1,30 @@
 // Date is used to get all date
-let data = new Date()
-console.log(data)
+let date = new Date()
+console.log(date)
 
 //GET ESPECIFIC TIME:
 //year
-console.log(data.getFullYear())
+console.log(date.getFullYear())
 
 //month
-console.log(data.getMonth())//month start with 0,you most add +1 
+console.log(date.getMonth())//month start with 0,you most add +1 
 
 var months = ['jan','feb','mar','apri','may','jun','jul','ago','set','oct','nov','dec']
-console.log(months[data.getMonth()])
+console.log(months[date.getMonth()])
 
 //day of the month
-console.log(data.getDate())
+console.log(date.getDate())
 
 //day of the month
-console.log(data.getDay()) // from 0 to 6 (start SUNDAY)
+console.log(date.getDay()) // from 0 to 6 (start SUNDAY)
 var week = ['sun','mon','tue','wed','tji','fri','sat']
-console.log(week[data.getDay()])
+console.log(week[date.getDay()])
 
 //hour
-console.log(data.getHours())
+console.log(date.getHours()) // from 0 to 23
 
 //minute
-console.log(data.getMinutes())
+console.log(date.getMinutes())
+
+//second
+console.log(date.getSeconds())
