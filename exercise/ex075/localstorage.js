@@ -1,4 +1,4 @@
-//
+// localstorage is used to save data, even if you reload or close the page, the storage is until 10MB. 
 
 localStorage.setItem('name', 'claudio'); // setItem is used to save data.like this: localStorage.setItem('key', 'value')
 
