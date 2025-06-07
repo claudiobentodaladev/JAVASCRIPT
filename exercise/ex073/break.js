@@ -1,3 +1,4 @@
+//break is used to stop a instrucions
 for(var i = 0; i < 10; i++){
     if (i == 5) {
         console.log(`broken in ${i}`)
