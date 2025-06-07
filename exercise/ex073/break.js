@@ -1,6 +1,6 @@
 for(var i = 0; i < 10; i++){
     if (i == 5) {
-        console.log(`brouken in ${i}`)
+        console.log(`broken in ${i}`)
         break;
     }
     i++;console.log(`ola ${i}`);i--
