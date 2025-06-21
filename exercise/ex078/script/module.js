@@ -41,7 +41,6 @@ function number_text (number){
 const language = ['portuguese','english']
 const yearsold = 16
 
-
 export{
     fullname,
     number_text,
