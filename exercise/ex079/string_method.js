@@ -14,3 +14,5 @@ console.log(`Slice: ${text.slice(2,5)}`) // slice is used to get a part of strin
 console.log(`uppercase: ${text.toUpperCase()}`)
 
 console.log(`lowercase: ${'CLAUDIO'.toLowerCase()}`)
+
+console.log('this is a string'.split('')) // split is used to get evry caracter to array
