@@ -24,7 +24,7 @@ console.log(`STRING: ${char}`)
 function sam(x,y,z) {
     return x + y + z
 }
-/* other way to put value in function's params, with spread operator
+/* other way to put value in function's parameters, with spread operator
 let resulted = sam(10,20,30)
 */
 let values = [10,20,30]

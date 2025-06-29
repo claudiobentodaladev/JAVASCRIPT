@@ -1,11 +1,12 @@
-// CLASS: are dinamics object maker
+// CLASS are dinamics object maker
 
 /* It's a ready object
 const vivo = {
     ram: 8,
     rom: 128,
     version: 11
-} */
+}
+*/
 
 // It's a creater object
 class computer{
