@@ -15,4 +15,4 @@ console.log(`uppercase: ${text.toUpperCase()}`)
 
 console.log(`lowercase: ${'CLAUDIO'.toLowerCase()}`)
 
-console.log('this is a string'.split('')) // split is used to get evry caracter to array
+console.log('this is a string'.split('')) // split is used to get evry caracter in string, as a arrays
