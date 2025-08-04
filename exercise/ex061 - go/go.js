@@ -9,6 +9,4 @@ function go() {
         show.innerHTML =`${name} speak ${language}`
     }
     window.open('show.html')
-
-
 }
