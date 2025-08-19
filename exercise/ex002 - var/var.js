@@ -4,9 +4,9 @@ let anything = "Claudio"
 //or
 var any_data = 3
 
-typeof 3
+console.log(typeof 3)
 //or
-typeof anything
+console.log(typeof anything)
 
 // typeof: is used to get what datatype you are useing
 
