@@ -1,12 +1,13 @@
 // Callback function is used to get function into another function as a parameter
 
-const map2 = running => {
-    const numbers = ["one", "two", "three", "four", "five", "six", "seven", "eigth", "nine", "ten"]
-    for (const index in numbers) {
-        running(numbers[index])
+const numbers = ["one", "two", "three", "four", "five", "six", "seven", "eigth", "nine", "ten"]
+
+const map2 = (array, running) => {
+    for (const index in array) {
+        running(array[index])
     }
 }
 
-map2(values => {
+map2(numbers, values => {
     console.log(`Couting: ${values}`)
 })
