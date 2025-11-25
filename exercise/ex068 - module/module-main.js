@@ -1,4 +1,4 @@
-const { add, greeting, subtract } = require('./module.child') // require is used to import function and data from other file 
+const { add, greeting, subtract } = require('./module-child') // require is used to import function and data from other file 
 
 console.log("parent")
 
