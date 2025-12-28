@@ -1,4 +1,7 @@
 import bcrypt from "bcrypt";
+/* TO INSTALL:
+    NPM INSTALL BCRYPT
+*/
 
 const saltRounds = 10;
 
