@@ -29,5 +29,3 @@ console.log(developer.introduce())
 const neighbor = new person('Bento', 18)
 console.log(neighbor.getName())
 console.log(neighbor.getAge())
-
-
