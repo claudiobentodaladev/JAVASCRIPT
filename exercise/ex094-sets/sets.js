@@ -1,6 +1,6 @@
 // Sets is like array that you cann't repeat the values
 
-const numbers = new Set([,1, 5, 10, 2, -12,55, 0, 819, 1975])
+const numbers = new Set([1, 5, 10, 2, -12,55, 0, 819, 1975])
 
 numbers.add(30) // -> to add value
 numbers.delete(1) // -> to delete value
