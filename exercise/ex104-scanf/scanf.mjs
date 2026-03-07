@@ -1,13 +1,19 @@
-import { createInterface, promises } from "readline";
+import readline from "readline";
 
-const rl = promises.createInterface({
+console.log("ola: ")
+
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question("Input your name: ", (Name) => {
-    console.log(`Hello ${Name}`);
-    rl.close()
-});
+const input = () => {
+    let value;
+    rl.question("", (Value) => {
+        console.log(Value)
+        rl.close();
+    });
+    return value
+};
 
-rl.on('close', process.exit(0));
+input();
