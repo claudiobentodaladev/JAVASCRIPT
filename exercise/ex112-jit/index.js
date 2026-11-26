@@ -3,7 +3,7 @@ const { promisify } = require("node:util");
 
 const execAsync = promisify(exec);
 
-async function main(instruc) {
+async function run(instruc) {
     try {
         const { stdout, stderr } = await execAsync(instruc.join("\n"), {
             shell: "/bin/bash",
@@ -17,7 +17,7 @@ async function main(instruc) {
     }
 }
 
-main([
+run([
     'readonly name="Claudio"',
     "age=17",
     `echo "My name is $name and i'm $age years old"`,
